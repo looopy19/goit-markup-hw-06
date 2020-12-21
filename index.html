@@ -336,29 +336,37 @@
         </p>
 
          <form class="form">
-      <div class="form-field">
-        <input
-          type="text"
-          class="form-input"
-          name="name"
-          id="name"
-          placeholder=" "
-        />
-        <label for="name" class="form-label">Имя</label>
-        <span class="icon"></span>
-      </div>
-
-      <div class="form-field">
-        <input
-          type="email"
-          class="form-input"
-          name="mail"
-          id="mail"
-          placeholder=" "
-        />
-        <label for="mail" class="form-label">Почта</label>
-        <span class="icon"></span>
-      </div>
+           <label class="label">Имя
+             <span class="input-wrapper">
+             <input type="text" class="input-field" name="user-name" required>
+             <svg class="user-icon" width="18px" height="18px"
+          ><use href="./images/sprite.svg#user"></use></svg>
+          </span>
+           </label>
+            <label class="label">Телефон
+              <span class="input-wrapper">
+             <input type="tel" class="input-field" name="user-tel" required>
+             <svg class="user-icon" width="18px" height="18px"
+          ><use href="./images/sprite.svg#phone"></use></svg>
+          </span>
+           </label>
+           <label class="label">Почта
+             <span class="input-wrapper">
+             <input type="email" class="input-field" name="user-email" required>
+             <svg class="user-icon" width="18px" height="18px"
+          ><use href="./images/sprite.svg#email"></use></svg>
+          </span>
+           </label>
+           <label class="label message">Комментарий
+             <textarea name="message-field" class="message-field" placeholder="Введите текст
+            "></textarea>
+           </label>
+           <input type="checkbox" class="checkbox visually-hidden" name="policy-field"  value="accept-policy" id="policy">
+           
+           <label for="policy" class="policy-label">Соглашаюсь с рассылкой и принимаю&nbsp; <a href="" class="policy-link"> Условия договора</a></label>
+           <button type="submit" class="btn modal-submit">Отправить</button>
+         </form>
+        
 
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-icon" width="12px" height="12px">
